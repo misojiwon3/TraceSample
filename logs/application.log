@@ -1,0 +1,49 @@
+2018-07-04 19:10:48,665 [INFO] from ai.t2x.trace.Main$ in main - Starting...
+2018-07-04 19:10:49,510 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-5 - Registered named actor: root
+2018-07-04 19:10:49,510 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: manager
+2018-07-04 19:10:49,512 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: handler
+2018-07-04 19:10:49,514 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: dao
+2018-07-04 19:10:49,516 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: account
+2018-07-04 19:10:49,517 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: authentication
+2018-07-04 19:10:49,519 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: rdb
+2018-07-04 19:10:49,603 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-04 19:10:49,603 [INFO] from ai.t2x.trace.HttpServer in main - host=0.0.0.0
+2018-07-04 19:10:49,604 [INFO] from ai.t2x.trace.HttpServer in main - port=9011
+2018-07-04 19:10:49,604 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-04 19:10:50,372 [INFO] from ai.t2x.trace.HttpServer in scala-execution-context-global-20 - Succeed to start Http Server. Listening on: /0:0:0:0:0:0:0:0:9011
+2018-07-04 19:16:42,315 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-11 - Unregistered named actor: root
+2018-07-04 19:16:42,315 [ERROR] from ai.t2x.trace.MainRootActor in TRACE-akka.actor.default-dispatcher-11 - shutdown reason = akka.actor.CoordinatedShutdown$JvmExitReason$@47ea76c7
+2018-07-04 19:17:05,540 [INFO] from ai.t2x.trace.Main$ in main - Starting...
+2018-07-04 19:17:06,329 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-3 - Registered named actor: root
+2018-07-04 19:17:06,330 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: manager
+2018-07-04 19:17:06,332 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: handler
+2018-07-04 19:17:06,334 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: dao
+2018-07-04 19:17:06,336 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: account
+2018-07-04 19:17:06,338 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: authentication
+2018-07-04 19:17:06,339 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: rdb
+2018-07-04 19:17:06,419 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-04 19:17:06,420 [INFO] from ai.t2x.trace.HttpServer in main - host=0.0.0.0
+2018-07-04 19:17:06,420 [INFO] from ai.t2x.trace.HttpServer in main - port=9011
+2018-07-04 19:17:06,420 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-04 19:17:07,118 [INFO] from ai.t2x.trace.HttpServer in scala-execution-context-global-21 - Succeed to start Http Server. Listening on: /0:0:0:0:0:0:0:0:9011
+2018-07-04 19:17:23,025 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-5 - [Controller] Tracer is generated.
+2018-07-04 19:17:23,051 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-5 - Using the UDP Sender to send spans to the agent.
+2018-07-04 19:17:43,135 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [Controller] Tracer is closed.
+2018-07-04 19:18:30,754 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-12 - Unregistered named actor: root
+2018-07-04 19:18:30,754 [ERROR] from ai.t2x.trace.MainRootActor in TRACE-akka.actor.default-dispatcher-12 - shutdown reason = akka.actor.CoordinatedShutdown$JvmExitReason$@1e29ab1a
+2018-07-04 19:20:16,854 [INFO] from ai.t2x.trace.Main$ in main - Starting...
+2018-07-04 19:20:19,331 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-4 - Registered named actor: root
+2018-07-04 19:20:19,332 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: manager
+2018-07-04 19:20:19,335 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: handler
+2018-07-04 19:20:19,337 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: dao
+2018-07-04 19:20:19,338 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: account
+2018-07-04 19:20:19,341 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: authentication
+2018-07-04 19:20:19,342 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: rdb
+2018-07-04 19:20:19,470 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-04 19:20:19,471 [INFO] from ai.t2x.trace.HttpServer in main - host=0.0.0.0
+2018-07-04 19:20:19,472 [INFO] from ai.t2x.trace.HttpServer in main - port=9011
+2018-07-04 19:20:19,473 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-04 19:20:21,592 [INFO] from ai.t2x.trace.HttpServer in scala-execution-context-global-20 - Succeed to start Http Server. Listening on: /0:0:0:0:0:0:0:0:9011
+2018-07-04 19:23:32,537 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-11 - [Controller] Tracer is generated.
+2018-07-04 19:23:32,565 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-11 - Using the UDP Sender to send spans to the agent.
+2018-07-04 19:23:52,652 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-6 - [Controller] Tracer is closed.

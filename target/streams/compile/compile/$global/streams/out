@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/hanseung/Development/TraceSample/src/main/scala/ai/t2x/trace/actor/AccountActor.scala:12:20: parameter 'context' requires field but conflicts with value context in trait Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass AccountActor(context: TraceContext) extends AbstractActor {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanseung/Development/TraceSample/src/main/scala/ai/t2x/trace/actor/AuthenticationActor.scala:12:27: parameter 'context' requires field but conflicts with value context in trait Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass AuthenticationActor(context: TraceContext) extends AbstractActor {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanseung/Development/TraceSample/src/main/scala/ai/t2x/trace/actor/HandlerActor.scala:12:20: parameter 'context' requires field but conflicts with value context in trait Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass HandlerActor(context: TraceContext) extends AbstractActor {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanseung/Development/TraceSample/src/main/scala/ai/t2x/trace/actor/ManagerActor.scala:12:20: parameter 'context' requires field but conflicts with value context in trait Actor[0m
+[0m[[0m[31merror[0m] [0m[0mclass ManagerActor(context: TraceContext) extends AbstractActor {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

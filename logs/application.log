@@ -47,3 +47,6 @@
 2018-07-04 19:23:32,537 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-11 - [Controller] Tracer is generated.
 2018-07-04 19:23:32,565 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-11 - Using the UDP Sender to send spans to the agent.
 2018-07-04 19:23:52,652 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-6 - [Controller] Tracer is closed.
+2018-07-04 19:26:52,386 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-8 - [Controller] Tracer is generated.
+2018-07-04 19:26:52,388 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-8 - Using the UDP Sender to send spans to the agent.
+2018-07-04 19:27:12,405 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-14 - [Controller] Tracer is closed.

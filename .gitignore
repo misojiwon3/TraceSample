@@ -1,1 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
+target/
+project/project/
+.idea/
+.history
+.metadata
+.project
+**/target/
+**/**/target/
+**/*.iml

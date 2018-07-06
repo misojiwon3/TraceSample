@@ -68,5 +68,5 @@ lazy val trace = (project in file("."))
     bashScriptConfigLocation := Some("/opt/trace/conf/process.ini"),
     dockerEntrypoint := Seq("/opt/trace/bin/trace"),
     dockerRepository := Some("192.168.7.150:8083"),
-    dockerExposedPorts := Seq(9005)
+    dockerExposedPorts := Seq(9011)
   )

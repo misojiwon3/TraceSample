@@ -1,7 +1,7 @@
 package ai.t2x.trace.Controller
 
 import akka.pattern.ask
-import ai.t2x.trace.actor.ManagerActor
+import ai.t2x.trace.actor.{AccountActor, ManagerActor}
 import ai.t2x.trace.{TraceConfig, TraceContext}
 import ai.t2x.trace.common.{CreateAccountAPI, CtrlToManager, RequestTimeout, RouteInterface}
 import akka.actor.{ActorRef, ActorSystem, Props}
@@ -10,6 +10,7 @@ import akka.util.Timeout
 import com.google.common.collect.ImmutableMap
 import com.typesafe.scalalogging.StrictLogging
 import ai.t2x.trace.common.Functions._
+import io.opentracing.Span
 
 import scala.util.{Failure, Success}
 
@@ -20,6 +21,7 @@ import scala.util.{Failure, Success}
 class AccountController(implicit system: ActorSystem, context: TraceContext) extends RouteInterface with RequestTimeout with Directives with StrictLogging {
 
   private val managerActor: ActorRef = system.actorOf(Props(new ManagerActor(context)))
+  private val accountActor: ActorRef = system.actorOf(Props(new AccountActor(context)))
 
   implicit val timeout: Timeout = requestTimeout(TraceConfig.config)
 
@@ -31,17 +33,11 @@ class AccountController(implicit system: ActorSystem, context: TraceContext) ext
       get {
         val tracer = initTracer("Controller")
         val span = tracer.buildSpan("GET /account").start() // GET /account span 시작
-        println(span)
-        println(span)
-        println(span)
-        println(span)
-        println(span)
 
 //        span.setTag("http.url", request.host + request.path)
         span.setTag("http.url", "글자")
 //        span.log(ImmutableMap.of("API", s"${request.host} ${request.path} request"))
         span.log(ImmutableMap.of("API", s"localhost /account request"))
-
 
         onComplete(managerActor ? CtrlToManager("send to manager actor", span)) {
           case Success(r) =>
@@ -72,7 +68,7 @@ class AccountController(implicit system: ActorSystem, context: TraceContext) ext
         case class SampleClass(any: String)
 
         entity(as[String]) { _ =>
-          onComplete(managerActor ? CreateAccountAPI("Create Account API", span)) {
+          onComplete(accountActor ? CreateAccountAPI("Create Account API", span)) {
             case Success(r) => // account 등록 과정 모두 성공 하면
               span.setTag("http.status_code", "200")
               span.finish() // account 등록 span 종료

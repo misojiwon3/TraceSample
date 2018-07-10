@@ -8,4 +8,5 @@ project/project/
 **/target/
 **/**/target/
 **/*.iml
-logs/
+logs
+logs/application.log

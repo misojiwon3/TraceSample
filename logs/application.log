@@ -2724,3 +2724,335 @@
 2018-07-09 09:17:14,194 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-2 - Span reported: 9f13769a4e92ae39:9f13769a4e92ae39:0:1 - POST /account
 2018-07-09 09:17:14,194 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-2 - [POST /account] Span is finished.
 2018-07-09 09:17:14,195 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-2 - [Controller] Tracer is closed.
+2018-07-09 10:18:21,301 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-14 - [Controller] Tracer is generated.
+2018-07-09 10:18:21,301 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-14 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:21,311 [INFO] from ai.t2x.trace.actor.AccountActor in TRACE-akka.actor.default-dispatcher-17 - AccountActor received CreateAccountAPI message.
+2018-07-09 10:18:21,311 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [Account] Tracer is generated.
+2018-07-09 10:18:21,311 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:21,314 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RequestReadAccount] Span is started.
+2018-07-09 10:18:21,314 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-17 - RdbActor received ReadAccountReq message.
+2018-07-09 10:18:21,326 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is generated.
+2018-07-09 10:18:21,326 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:21,327 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [ReadAccount] Span is started.
+2018-07-09 10:18:21,339 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-17 - Span reported: ca245019c34158cc:678c14a9aff07ca:3abc046e43e753d4:1 - ReadAccount
+2018-07-09 10:18:21,339 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [ReadAccount] Span is finished.
+2018-07-09 10:18:21,340 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is closed.
+2018-07-09 10:18:21,346 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-53 - Span reported: ca245019c34158cc:3abc046e43e753d4:ca245019c34158cc:1 - RequestReadAccount
+2018-07-09 10:18:21,346 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [ReadAccountSpan] Span is finished.
+2018-07-09 10:18:21,346 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [RequestCreateAccount] Span is started.
+2018-07-09 10:18:21,346 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-17 - RdbActor received CreateAccountReq message.
+2018-07-09 10:18:21,356 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is generated.
+2018-07-09 10:18:21,357 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:21,357 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [CreateAccount] Span is started.
+2018-07-09 10:18:21,374 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-17 - Span reported: ca245019c34158cc:e7fd3af022331ca0:3554a8ee4e1d010:1 - CreateAccount
+2018-07-09 10:18:21,374 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [CreateAccount] Span is finished.
+2018-07-09 10:18:21,374 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is closed.
+2018-07-09 10:18:21,380 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-53 - Span reported: ca245019c34158cc:3554a8ee4e1d010:ca245019c34158cc:1 - RequestCreateAccount
+2018-07-09 10:18:21,380 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [RequestCreateAccount] Span is finished.
+2018-07-09 10:18:21,380 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [ForwardRequestCreateAuthentication] Span is started.
+2018-07-09 10:18:21,380 [INFO] from ai.t2x.trace.actor.AuthenticationActor in TRACE-akka.actor.default-dispatcher-17 - AuthenticationActor received ForwardCreateAuthenticationReq message.
+2018-07-09 10:18:21,393 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [Authentication] Tracer is generated.
+2018-07-09 10:18:21,393 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:21,394 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RequestCreateAuthentication] Span is started.
+2018-07-09 10:18:21,394 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-17 - RdbActor received CreateAuthenticationReq message.
+2018-07-09 10:18:21,406 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is generated.
+2018-07-09 10:18:21,406 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:21,407 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [CreateAuthentication] Span is started.
+2018-07-09 10:18:21,424 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-17 - Span reported: ca245019c34158cc:dcadab9039868703:f28df4e59adbf696:1 - CreateAuthentication
+2018-07-09 10:18:21,424 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [CreateAuthentication] Span is finished.
+2018-07-09 10:18:21,424 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is closed.
+2018-07-09 10:18:21,441 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-53 - Span reported: ca245019c34158cc:f28df4e59adbf696:49adf6b2c5bc236d:1 - RequestCreateAuthentication
+2018-07-09 10:18:21,441 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [RequestCreateAuthentication] Span is finished.
+2018-07-09 10:18:21,441 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [Authentication] Tracer is closed.
+2018-07-09 10:18:21,447 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-53 - Span reported: ca245019c34158cc:49adf6b2c5bc236d:ca245019c34158cc:1 - ForwardRequestCreateAuthentication
+2018-07-09 10:18:21,447 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [ForwardRequestCreateAuthentication] Span is finished.
+2018-07-09 10:18:21,448 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-53 - [Account] Tracer is closed.
+2018-07-09 10:18:21,448 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-17 - Span reported: ca245019c34158cc:ca245019c34158cc:0:1 - POST /account
+2018-07-09 10:18:21,448 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [POST /account] Span is finished.
+2018-07-09 10:18:21,449 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [Controller] Tracer is closed.
+2018-07-09 10:18:33,962 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-11 - [Controller] Tracer is generated.
+2018-07-09 10:18:33,962 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-11 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:33,967 [INFO] from ai.t2x.trace.actor.ManagerActor in TRACE-akka.actor.default-dispatcher-4 - ManagerActor received CtrlToManager message.
+2018-07-09 10:18:33,977 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [Manager] Tracer is generated.
+2018-07-09 10:18:33,978 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-4 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:33,979 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [manageRequest] Span is started.
+2018-07-09 10:18:33,980 [INFO] from ai.t2x.trace.actor.HandlerActor in TRACE-akka.actor.default-dispatcher-11 - HandlerActor received ManagerToHandler message.
+2018-07-09 10:18:33,990 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-11 - [Handler] Tracer is generated.
+2018-07-09 10:18:33,991 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-11 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:33,991 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-11 - [handleRequest] Span is started.
+2018-07-09 10:18:33,992 [INFO] from ai.t2x.trace.actor.DaoActor in TRACE-akka.actor.default-dispatcher-4 - DaoActor received HandlerToDao message.
+2018-07-09 10:18:34,004 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [DAO] Tracer is generated.
+2018-07-09 10:18:34,004 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-4 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:34,005 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [daoRequest] Span is started.
+2018-07-09 10:18:34,015 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-4 - Span reported: 7679a8404ec521cb:28e42d2aca1cc678:431b97cb4afcaea5:1 - daoRequest
+2018-07-09 10:18:34,016 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [daoRequest] Span is finished.
+2018-07-09 10:18:34,016 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [DAO] Tracer is closed.
+2018-07-09 10:18:34,027 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-60 - Span reported: 7679a8404ec521cb:431b97cb4afcaea5:2b844ec3edf99f56:1 - handleRequest
+2018-07-09 10:18:34,027 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-60 - [handleRequest] Span is finished.
+2018-07-09 10:18:34,028 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-60 - [Handler] Tracer is closed.
+2018-07-09 10:18:34,038 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-60 - Span reported: 7679a8404ec521cb:2b844ec3edf99f56:7679a8404ec521cb:1 - manageRequest
+2018-07-09 10:18:34,039 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-60 - [manageRequest] Span is finished.
+2018-07-09 10:18:34,039 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-60 - [Manager] Tracer is closed.
+2018-07-09 10:18:34,039 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-4 - Span reported: 7679a8404ec521cb:7679a8404ec521cb:0:1 - GET /account
+2018-07-09 10:18:34,039 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [GET /account] Span is finished.
+2018-07-09 10:18:34,040 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [Controller] Tracer is closed.
+2018-07-09 10:18:40,680 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-11 - [Controller] Tracer is generated.
+2018-07-09 10:18:40,680 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-11 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:40,683 [INFO] from ai.t2x.trace.actor.ManagerActor in TRACE-akka.actor.default-dispatcher-19 - ManagerActor received CtrlToManager message.
+2018-07-09 10:18:40,693 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [Manager] Tracer is generated.
+2018-07-09 10:18:40,693 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-19 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:40,694 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [manageRequest] Span is started.
+2018-07-09 10:18:40,694 [INFO] from ai.t2x.trace.actor.HandlerActor in TRACE-akka.actor.default-dispatcher-19 - HandlerActor received ManagerToHandler message.
+2018-07-09 10:18:40,705 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [Handler] Tracer is generated.
+2018-07-09 10:18:40,706 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-19 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:40,706 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [handleRequest] Span is started.
+2018-07-09 10:18:40,707 [INFO] from ai.t2x.trace.actor.DaoActor in TRACE-akka.actor.default-dispatcher-19 - DaoActor received HandlerToDao message.
+2018-07-09 10:18:40,718 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [DAO] Tracer is generated.
+2018-07-09 10:18:40,719 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-19 - Using the UDP Sender to send spans to the agent.
+2018-07-09 10:18:40,720 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [daoRequest] Span is started.
+2018-07-09 10:18:40,731 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-19 - Span reported: 4fa9639a3fb3f2e:282b057b26da3499:493fa66ec3c6b560:1 - daoRequest
+2018-07-09 10:18:40,731 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [daoRequest] Span is finished.
+2018-07-09 10:18:40,731 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [DAO] Tracer is closed.
+2018-07-09 10:18:40,742 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-69 - Span reported: 4fa9639a3fb3f2e:493fa66ec3c6b560:b27e6025cc82c73d:1 - handleRequest
+2018-07-09 10:18:40,742 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-69 - [handleRequest] Span is finished.
+2018-07-09 10:18:40,742 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-69 - [Handler] Tracer is closed.
+2018-07-09 10:18:40,753 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-69 - Span reported: 4fa9639a3fb3f2e:b27e6025cc82c73d:4fa9639a3fb3f2e:1 - manageRequest
+2018-07-09 10:18:40,753 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-69 - [manageRequest] Span is finished.
+2018-07-09 10:18:40,753 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-69 - [Manager] Tracer is closed.
+2018-07-09 10:18:40,754 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-19 - Span reported: 4fa9639a3fb3f2e:4fa9639a3fb3f2e:0:1 - GET /account
+2018-07-09 10:18:40,754 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [GET /account] Span is finished.
+2018-07-09 10:18:40,755 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-19 - [Controller] Tracer is closed.
+2018-07-09 14:08:27,933 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-22 - [Controller] Tracer is generated.
+2018-07-09 14:08:27,933 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-22 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:08:42,945 [INFO] from ai.t2x.trace.actor.ManagerActor in TRACE-akka.actor.default-dispatcher-23 - ManagerActor received CtrlToManager message.
+2018-07-09 14:08:42,957 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [Manager] Tracer is generated.
+2018-07-09 14:08:42,957 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-23 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:08:57,965 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [manageRequest] Span is started.
+2018-07-09 14:08:57,965 [INFO] from ai.t2x.trace.actor.HandlerActor in TRACE-akka.actor.default-dispatcher-23 - HandlerActor received ManagerToHandler message.
+2018-07-09 14:08:57,977 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [Handler] Tracer is generated.
+2018-07-09 14:08:57,977 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-23 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:09:01,401 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [Controller] Tracer is generated.
+2018-07-09 14:09:01,401 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-27 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:09:02,958 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-26 - [Controller] Tracer is closed.
+2018-07-09 14:09:17,990 [INFO] from ai.t2x.trace.actor.ManagerActor in TRACE-akka.actor.default-dispatcher-26 - ManagerActor received CtrlToManager message.
+2018-07-09 14:09:18,002 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-26 - [Manager] Tracer is generated.
+2018-07-09 14:09:18,003 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-26 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:09:27,991 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [handleRequest] Span is started.
+2018-07-09 14:09:27,991 [INFO] from ai.t2x.trace.actor.DaoActor in TRACE-akka.actor.default-dispatcher-23 - DaoActor received HandlerToDao message.
+2018-07-09 14:09:28,004 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [DAO] Tracer is generated.
+2018-07-09 14:09:28,004 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-23 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:09:38,009 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [Controller] Tracer is closed.
+2018-07-09 14:09:53,001 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-26 - [manageRequest] Span is started.
+2018-07-09 14:09:53,001 [INFO] from ai.t2x.trace.actor.HandlerActor in TRACE-akka.actor.default-dispatcher-26 - HandlerActor received ManagerToHandler message.
+2018-07-09 14:09:53,013 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-26 - [Handler] Tracer is generated.
+2018-07-09 14:09:53,013 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-26 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:09:58,002 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [daoRequest] Span is started.
+2018-07-09 14:09:58,012 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-23 - Span reported: f44aef1cb4ddba84:ec2d5d3766d89dab:c3e6e4953ade445e:1 - daoRequest
+2018-07-09 14:09:58,013 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [daoRequest] Span is finished.
+2018-07-09 14:09:58,013 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [DAO] Tracer is closed.
+2018-07-09 14:10:13,008 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-26 - [handleRequest] Span is started.
+2018-07-09 14:10:13,009 [INFO] from ai.t2x.trace.actor.DaoActor in TRACE-akka.actor.default-dispatcher-23 - DaoActor received HandlerToDao message.
+2018-07-09 14:10:13,019 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [DAO] Tracer is generated.
+2018-07-09 14:10:13,019 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-23 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:10:28,028 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [daoRequest] Span is started.
+2018-07-09 14:10:28,040 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-23 - Span reported: b57d9393ac56d6d0:1a9e10017e96fa2:2d806b8d6c83cf3a:1 - daoRequest
+2018-07-09 14:10:28,040 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [daoRequest] Span is finished.
+2018-07-09 14:10:28,041 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-23 - [DAO] Tracer is closed.
+2018-07-09 14:10:28,053 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-108 - Span reported: b57d9393ac56d6d0:2d806b8d6c83cf3a:1e68a06ca9922c77:1 - handleRequest
+2018-07-09 14:10:28,053 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-108 - [handleRequest] Span is finished.
+2018-07-09 14:10:28,053 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-108 - [Handler] Tracer is closed.
+2018-07-09 14:10:32,825 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-24 - Unregistered named actor: root
+2018-07-09 14:10:32,825 [ERROR] from ai.t2x.trace.MainRootActor in TRACE-akka.actor.default-dispatcher-24 - shutdown reason = akka.actor.CoordinatedShutdown$JvmExitReason$@263e108c
+2018-07-09 14:10:53,105 [INFO] from ai.t2x.trace.Main$ in main - Starting...
+2018-07-09 14:10:53,839 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-4 - Registered named actor: root
+2018-07-09 14:10:53,839 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: manager
+2018-07-09 14:10:53,840 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: handler
+2018-07-09 14:10:53,842 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: dao
+2018-07-09 14:10:53,843 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: account
+2018-07-09 14:10:53,845 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: authentication
+2018-07-09 14:10:53,845 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: rdb
+2018-07-09 14:10:53,925 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-09 14:10:53,926 [INFO] from ai.t2x.trace.HttpServer in main - host=0.0.0.0
+2018-07-09 14:10:53,926 [INFO] from ai.t2x.trace.HttpServer in main - port=9011
+2018-07-09 14:10:53,926 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-09 14:10:54,601 [INFO] from ai.t2x.trace.HttpServer in scala-execution-context-global-25 - Succeed to start Http Server. Listening on: /0:0:0:0:0:0:0:0:9011
+2018-07-09 14:11:14,340 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-6 - [Controller] Tracer is generated.
+2018-07-09 14:11:14,360 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-6 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:11:29,413 [INFO] from ai.t2x.trace.actor.ManagerActor in TRACE-akka.actor.default-dispatcher-3 - ManagerActor received CtrlToManager message.
+2018-07-09 14:11:29,425 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-3 - [Manager] Tracer is generated.
+2018-07-09 14:11:29,428 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-3 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:11:44,435 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-3 - [manageRequest] Span is started.
+2018-07-09 14:11:44,436 [INFO] from ai.t2x.trace.actor.HandlerActor in TRACE-akka.actor.default-dispatcher-13 - HandlerActor received ManagerToHandler message.
+2018-07-09 14:11:44,447 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-13 - [Handler] Tracer is generated.
+2018-07-09 14:11:44,448 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-13 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:11:49,429 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-3 - [Controller] Tracer is closed.
+2018-07-09 14:11:59,457 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-13 - [handleRequest] Span is started.
+2018-07-09 14:11:59,464 [INFO] from ai.t2x.trace.actor.DaoActor in TRACE-akka.actor.default-dispatcher-3 - DaoActor received HandlerToDao message.
+2018-07-09 14:11:59,475 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-3 - [DAO] Tracer is generated.
+2018-07-09 14:11:59,475 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-3 - Using the UDP Sender to send spans to the agent.
+2018-07-09 14:12:14,480 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-3 - [daoRequest] Span is started.
+2018-07-09 14:12:14,491 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-3 - Span reported: 1808303e414ca8ba:55c64cb988b5a9df:696f43bb7f4c633:1 - daoRequest
+2018-07-09 14:12:14,493 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-3 - [daoRequest] Span is finished.
+2018-07-09 14:12:14,516 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-3 - [DAO] Tracer is closed.
+2018-07-09 14:12:14,527 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-36 - Span reported: 1808303e414ca8ba:696f43bb7f4c633:40a35d98685dde51:1 - handleRequest
+2018-07-09 14:12:14,527 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-36 - [handleRequest] Span is finished.
+2018-07-09 14:12:14,528 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-36 - [Handler] Tracer is closed.
+2018-07-09 14:28:01,769 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-14 - Unregistered named actor: root
+2018-07-09 14:28:01,769 [ERROR] from ai.t2x.trace.MainRootActor in TRACE-akka.actor.default-dispatcher-14 - shutdown reason = akka.actor.CoordinatedShutdown$JvmExitReason$@75576cd5
+2018-07-09 15:14:21,939 [INFO] from ai.t2x.trace.Main$ in main - Starting...
+2018-07-09 15:14:24,437 [DEBUG] from ai.t2x.trace.TraceContext in TRACE-akka.actor.default-dispatcher-5 - Registered named actor: root
+2018-07-09 15:14:24,439 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: manager
+2018-07-09 15:14:24,442 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: handler
+2018-07-09 15:14:24,445 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: dao
+2018-07-09 15:14:24,447 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: account
+2018-07-09 15:14:24,451 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: authentication
+2018-07-09 15:14:24,453 [DEBUG] from ai.t2x.trace.TraceContext in main - Registered named actor: rdb
+2018-07-09 15:14:24,618 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-09 15:14:24,619 [INFO] from ai.t2x.trace.HttpServer in main - host=0.0.0.0
+2018-07-09 15:14:24,620 [INFO] from ai.t2x.trace.HttpServer in main - port=9011
+2018-07-09 15:14:24,620 [INFO] from ai.t2x.trace.HttpServer in main - ----------------------------
+2018-07-09 15:14:26,990 [INFO] from ai.t2x.trace.HttpServer in scala-execution-context-global-19 - Succeed to start Http Server. Listening on: /0:0:0:0:0:0:0:0:9011
+2018-07-09 15:15:15,018 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [Controller] Tracer is generated.
+2018-07-09 15:15:15,037 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-10 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:15,088 [INFO] from ai.t2x.trace.actor.ManagerActor in TRACE-akka.actor.default-dispatcher-4 - ManagerActor received CtrlToManager message.
+2018-07-09 15:15:15,099 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [Manager] Tracer is generated.
+2018-07-09 15:15:15,101 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-4 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:15,103 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [manageRequest] Span is started.
+2018-07-09 15:15:15,105 [INFO] from ai.t2x.trace.actor.HandlerActor in TRACE-akka.actor.default-dispatcher-10 - HandlerActor received ManagerToHandler message.
+2018-07-09 15:15:15,116 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [Handler] Tracer is generated.
+2018-07-09 15:15:15,116 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-10 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:15,117 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [handleRequest] Span is started.
+2018-07-09 15:15:15,119 [INFO] from ai.t2x.trace.actor.DaoActor in TRACE-akka.actor.default-dispatcher-4 - DaoActor received HandlerToDao message.
+2018-07-09 15:15:15,129 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [DAO] Tracer is generated.
+2018-07-09 15:15:15,130 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-4 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:15,131 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [daoRequest] Span is started.
+2018-07-09 15:15:15,143 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-4 - Span reported: 9ad109d4beba3c8c:5b68dbfbf590d5ad:584b9a8cf1f39584:1 - daoRequest
+2018-07-09 15:15:15,144 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [daoRequest] Span is finished.
+2018-07-09 15:15:15,168 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [DAO] Tracer is closed.
+2018-07-09 15:15:15,180 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-34 - Span reported: 9ad109d4beba3c8c:584b9a8cf1f39584:187d2013eea8fbac:1 - handleRequest
+2018-07-09 15:15:15,180 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [handleRequest] Span is finished.
+2018-07-09 15:15:15,181 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [Handler] Tracer is closed.
+2018-07-09 15:15:15,192 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-34 - Span reported: 9ad109d4beba3c8c:187d2013eea8fbac:9ad109d4beba3c8c:1 - manageRequest
+2018-07-09 15:15:15,192 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [manageRequest] Span is finished.
+2018-07-09 15:15:15,192 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [Manager] Tracer is closed.
+2018-07-09 15:15:15,196 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-4 - Span reported: 9ad109d4beba3c8c:9ad109d4beba3c8c:0:1 - GET /account
+2018-07-09 15:15:15,197 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [GET /account] Span is finished.
+2018-07-09 15:15:15,206 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [Controller] Tracer is closed.
+2018-07-09 15:15:16,729 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [Controller] Tracer is generated.
+2018-07-09 15:15:16,730 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-10 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:16,750 [INFO] from ai.t2x.trace.actor.AccountActor in TRACE-akka.actor.default-dispatcher-4 - AccountActor received CreateAccountAPI message.
+2018-07-09 15:15:16,750 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [Account] Tracer is generated.
+2018-07-09 15:15:16,750 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-4 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:16,751 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [RequestReadAccount] Span is started.
+2018-07-09 15:15:16,752 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-10 - RdbActor received ReadAccountReq message.
+2018-07-09 15:15:16,763 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [RDB] Tracer is generated.
+2018-07-09 15:15:16,763 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-10 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:16,764 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [ReadAccount] Span is started.
+2018-07-09 15:15:16,775 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-10 - Span reported: b00e280170fa0578:10c0ace44ae50169:43af4a9fcc8ccf7a:1 - ReadAccount
+2018-07-09 15:15:16,776 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [ReadAccount] Span is finished.
+2018-07-09 15:15:16,776 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [RDB] Tracer is closed.
+2018-07-09 15:15:16,783 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-34 - Span reported: b00e280170fa0578:43af4a9fcc8ccf7a:b00e280170fa0578:1 - RequestReadAccount
+2018-07-09 15:15:16,783 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [ReadAccountSpan] Span is finished.
+2018-07-09 15:15:16,783 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [RequestCreateAccount] Span is started.
+2018-07-09 15:15:16,784 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-10 - RdbActor received CreateAccountReq message.
+2018-07-09 15:15:16,794 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [RDB] Tracer is generated.
+2018-07-09 15:15:16,795 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-10 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:16,796 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [CreateAccount] Span is started.
+2018-07-09 15:15:16,812 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-10 - Span reported: b00e280170fa0578:86bf8099f61bbafe:975e8e068d118608:1 - CreateAccount
+2018-07-09 15:15:16,812 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [CreateAccount] Span is finished.
+2018-07-09 15:15:16,813 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [RDB] Tracer is closed.
+2018-07-09 15:15:16,819 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-34 - Span reported: b00e280170fa0578:975e8e068d118608:b00e280170fa0578:1 - RequestCreateAccount
+2018-07-09 15:15:16,819 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [RequestCreateAccount] Span is finished.
+2018-07-09 15:15:16,819 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [ForwardRequestCreateAuthentication] Span is started.
+2018-07-09 15:15:16,820 [INFO] from ai.t2x.trace.actor.AuthenticationActor in TRACE-akka.actor.default-dispatcher-10 - AuthenticationActor received ForwardCreateAuthenticationReq message.
+2018-07-09 15:15:16,831 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [Authentication] Tracer is generated.
+2018-07-09 15:15:16,832 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-10 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:16,833 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-10 - [RequestCreateAuthentication] Span is started.
+2018-07-09 15:15:16,833 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-4 - RdbActor received CreateAuthenticationReq message.
+2018-07-09 15:15:16,844 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [RDB] Tracer is generated.
+2018-07-09 15:15:16,844 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-4 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:15:16,845 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [CreateAuthentication] Span is started.
+2018-07-09 15:15:16,860 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-4 - Span reported: b00e280170fa0578:d0a10039f5640b3f:acee689edaf9121:1 - CreateAuthentication
+2018-07-09 15:15:16,860 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [CreateAuthentication] Span is finished.
+2018-07-09 15:15:16,861 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [RDB] Tracer is closed.
+2018-07-09 15:15:16,877 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-34 - Span reported: b00e280170fa0578:acee689edaf9121:234ff93ed72ef10b:1 - RequestCreateAuthentication
+2018-07-09 15:15:16,877 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [RequestCreateAuthentication] Span is finished.
+2018-07-09 15:15:16,877 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [Authentication] Tracer is closed.
+2018-07-09 15:15:16,883 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-34 - Span reported: b00e280170fa0578:234ff93ed72ef10b:b00e280170fa0578:1 - ForwardRequestCreateAuthentication
+2018-07-09 15:15:16,883 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [ForwardRequestCreateAuthentication] Span is finished.
+2018-07-09 15:15:16,883 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-34 - [Account] Tracer is closed.
+2018-07-09 15:15:16,884 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-4 - Span reported: b00e280170fa0578:b00e280170fa0578:0:1 - POST /account
+2018-07-09 15:15:16,884 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [POST /account] Span is finished.
+2018-07-09 15:15:16,886 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-4 - [Controller] Tracer is closed.
+2018-07-09 15:45:32,325 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [Controller] Tracer is generated.
+2018-07-09 15:45:32,326 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:45:32,331 [INFO] from ai.t2x.trace.actor.AccountActor in TRACE-akka.actor.default-dispatcher-17 - AccountActor received CreateAccountAPI message.
+2018-07-09 15:45:32,331 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [Account] Tracer is generated.
+2018-07-09 15:45:32,332 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:45:32,332 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RequestReadAccount] Span is started.
+2018-07-09 15:45:32,333 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-17 - RdbActor received ReadAccountReq message.
+2018-07-09 15:45:32,344 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is generated.
+2018-07-09 15:45:32,344 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:45:32,345 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [ReadAccount] Span is started.
+2018-07-09 15:45:32,356 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-17 - Span reported: b0d49ebbd11d7fae:bdc8a3031d478d24:6b1bdeb5d1f5511b:1 - ReadAccount
+2018-07-09 15:45:32,356 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [ReadAccount] Span is finished.
+2018-07-09 15:45:32,357 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is closed.
+2018-07-09 15:45:32,363 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-64 - Span reported: b0d49ebbd11d7fae:6b1bdeb5d1f5511b:b0d49ebbd11d7fae:1 - RequestReadAccount
+2018-07-09 15:45:32,363 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [ReadAccountSpan] Span is finished.
+2018-07-09 15:45:32,364 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [RequestCreateAccount] Span is started.
+2018-07-09 15:45:32,364 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-17 - RdbActor received CreateAccountReq message.
+2018-07-09 15:45:32,375 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is generated.
+2018-07-09 15:45:32,375 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:45:32,376 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [CreateAccount] Span is started.
+2018-07-09 15:45:32,391 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-17 - Span reported: b0d49ebbd11d7fae:fd12352e8e29f852:bf5b3627d3e77c03:1 - CreateAccount
+2018-07-09 15:45:32,391 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [CreateAccount] Span is finished.
+2018-07-09 15:45:32,392 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RDB] Tracer is closed.
+2018-07-09 15:45:32,398 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-64 - Span reported: b0d49ebbd11d7fae:bf5b3627d3e77c03:b0d49ebbd11d7fae:1 - RequestCreateAccount
+2018-07-09 15:45:32,398 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [RequestCreateAccount] Span is finished.
+2018-07-09 15:45:32,398 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [ForwardRequestCreateAuthentication] Span is started.
+2018-07-09 15:45:32,399 [INFO] from ai.t2x.trace.actor.AuthenticationActor in TRACE-akka.actor.default-dispatcher-17 - AuthenticationActor received ForwardCreateAuthenticationReq message.
+2018-07-09 15:45:32,409 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [Authentication] Tracer is generated.
+2018-07-09 15:45:32,410 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-17 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:45:32,411 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-17 - [RequestCreateAuthentication] Span is started.
+2018-07-09 15:45:32,411 [INFO] from ai.t2x.trace.actor.RdbActor in TRACE-akka.actor.default-dispatcher-22 - RdbActor received CreateAuthenticationReq message.
+2018-07-09 15:45:32,421 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-22 - [RDB] Tracer is generated.
+2018-07-09 15:45:32,421 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-22 - Using the UDP Sender to send spans to the agent.
+2018-07-09 15:45:32,422 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-22 - [CreateAuthentication] Span is started.
+2018-07-09 15:45:32,438 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-22 - Span reported: b0d49ebbd11d7fae:aeeca4f88a161b2f:b878c49e8b5bba7a:1 - CreateAuthentication
+2018-07-09 15:45:32,438 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-22 - [CreateAuthentication] Span is finished.
+2018-07-09 15:45:32,438 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-22 - [RDB] Tracer is closed.
+2018-07-09 15:45:32,454 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-64 - Span reported: b0d49ebbd11d7fae:b878c49e8b5bba7a:395d890d52cf43f5:1 - RequestCreateAuthentication
+2018-07-09 15:45:32,454 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [RequestCreateAuthentication] Span is finished.
+2018-07-09 15:45:32,455 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [Authentication] Tracer is closed.
+2018-07-09 15:45:32,460 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-64 - Span reported: b0d49ebbd11d7fae:395d890d52cf43f5:b0d49ebbd11d7fae:1 - ForwardRequestCreateAuthentication
+2018-07-09 15:45:32,460 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [ForwardRequestCreateAuthentication] Span is finished.
+2018-07-09 15:45:32,461 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-64 - [Account] Tracer is closed.
+2018-07-09 15:45:32,461 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-22 - Span reported: b0d49ebbd11d7fae:b0d49ebbd11d7fae:0:1 - POST /account
+2018-07-09 15:45:32,461 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-22 - [POST /account] Span is finished.
+2018-07-09 15:45:32,462 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-22 - [Controller] Tracer is closed.
+2018-07-09 16:28:25,626 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-25 - [Controller] Tracer is generated.
+2018-07-09 16:28:25,626 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-25 - Using the UDP Sender to send spans to the agent.
+2018-07-09 16:28:30,635 [INFO] from ai.t2x.trace.actor.ManagerActor in TRACE-akka.actor.default-dispatcher-27 - ManagerActor received CtrlToManager message.
+2018-07-09 16:28:30,648 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [Manager] Tracer is generated.
+2018-07-09 16:28:30,648 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-27 - Using the UDP Sender to send spans to the agent.
+2018-07-09 16:28:30,649 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [manageRequest] Span is started.
+2018-07-09 16:28:30,649 [INFO] from ai.t2x.trace.actor.HandlerActor in TRACE-akka.actor.default-dispatcher-25 - HandlerActor received ManagerToHandler message.
+2018-07-09 16:28:30,661 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-25 - [Handler] Tracer is generated.
+2018-07-09 16:28:30,661 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-25 - Using the UDP Sender to send spans to the agent.
+2018-07-09 16:28:30,662 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-25 - [handleRequest] Span is started.
+2018-07-09 16:28:30,663 [INFO] from ai.t2x.trace.actor.DaoActor in TRACE-akka.actor.default-dispatcher-27 - DaoActor received HandlerToDao message.
+2018-07-09 16:28:30,675 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [DAO] Tracer is generated.
+2018-07-09 16:28:30,676 [DEBUG] from io.jaegertracing.Configuration in TRACE-akka.actor.default-dispatcher-27 - Using the UDP Sender to send spans to the agent.
+2018-07-09 16:28:30,676 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [daoRequest] Span is started.
+2018-07-09 16:28:30,688 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-27 - Span reported: 9a3b45266da87b31:f2b09cc8f0c26ed5:55a430876615d84e:1 - daoRequest
+2018-07-09 16:28:30,688 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [daoRequest] Span is finished.
+2018-07-09 16:28:30,689 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [DAO] Tracer is closed.
+2018-07-09 16:28:30,699 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-86 - Span reported: 9a3b45266da87b31:55a430876615d84e:bb3bc4d8e6d24bd9:1 - handleRequest
+2018-07-09 16:28:30,699 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-86 - [handleRequest] Span is finished.
+2018-07-09 16:28:30,700 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-86 - [Handler] Tracer is closed.
+2018-07-09 16:28:30,710 [INFO] from io.jaegertracing.reporters.LoggingReporter in scala-execution-context-global-86 - Span reported: 9a3b45266da87b31:bb3bc4d8e6d24bd9:9a3b45266da87b31:1 - manageRequest
+2018-07-09 16:28:30,710 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-86 - [manageRequest] Span is finished.
+2018-07-09 16:28:30,711 [INFO] from ai.t2x.trace.common.Functions$ in scala-execution-context-global-86 - [Manager] Tracer is closed.
+2018-07-09 16:28:30,711 [INFO] from io.jaegertracing.reporters.LoggingReporter in TRACE-akka.actor.default-dispatcher-27 - Span reported: 9a3b45266da87b31:9a3b45266da87b31:0:1 - GET /account
+2018-07-09 16:28:30,711 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [GET /account] Span is finished.
+2018-07-09 16:28:30,712 [INFO] from ai.t2x.trace.common.Functions$ in TRACE-akka.actor.default-dispatcher-27 - [Controller] Tracer is closed.

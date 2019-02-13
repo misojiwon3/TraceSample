@@ -25,3 +25,4 @@ object Main extends App with StrictLogging {
   val httpServer = HttpServer(system, materializer, traceMainContext)
   httpServer.start
 }
+
